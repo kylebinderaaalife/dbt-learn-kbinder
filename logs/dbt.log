@@ -1,0 +1,512 @@
+2020-07-15 18:19:37.141839 (MainThread): Done resetting log handlers.
+2020-07-15 18:19:37.141873 (MainThread): Received response from rpc task.
+2020-07-15 18:19:37.141896 (MainThread): Updating status to Paused
+2020-07-15 18:19:48.405228 (MainThread): Caught sighup
+2020-07-15 18:19:49.161236 (MainThread): Updating status to Ready
+2020-07-15 18:19:49.171822 (MainThread): Kicking off rpc task.
+2020-07-15 18:19:49.171881 (MainThread): dbt client called with ['--partial-parse', 'rpc', '--profile', 'user']
+2020-07-15 18:19:49.174003 (MainThread): Setting up log handlers...
+2020-07-15 18:19:49.184654 (MainThread): Running with dbt=0.17.0
+2020-07-15 18:19:49.213789 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2020-07-15 18:19:49.235004 (MainThread): Tracking: tracking
+2020-07-15 18:19:49.235157 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc1fb38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8004c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bbc5c18>]}
+2020-07-15 18:19:49.235383 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=13
+2020-07-15 18:19:49.235776 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2020-07-15 18:19:49.236110 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2020-07-15 18:19:49.237774 (Thread-69): Parsing macros/core.sql
+2020-07-15 18:19:49.242018 (Thread-69): Parsing macros/materializations/helpers.sql
+2020-07-15 18:19:49.250236 (Thread-69): Parsing macros/materializations/common/merge.sql
+2020-07-15 18:19:49.266835 (Thread-69): Parsing macros/materializations/table/table.sql
+2020-07-15 18:19:49.275915 (Thread-69): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-07-15 18:19:49.281291 (Thread-69): Parsing macros/materializations/view/view.sql
+2020-07-15 18:19:49.288265 (Thread-69): Parsing macros/materializations/snapshot/snapshot.sql
+2020-07-15 18:19:49.318900 (Thread-69): Parsing macros/materializations/snapshot/strategies.sql
+2020-07-15 18:19:49.336461 (Thread-69): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-07-15 18:19:49.338496 (Thread-69): Parsing macros/materializations/seed/seed.sql
+2020-07-15 18:19:49.360817 (Thread-69): Parsing macros/materializations/incremental/incremental.sql
+2020-07-15 18:19:49.368056 (Thread-69): Parsing macros/materializations/incremental/helpers.sql
+2020-07-15 18:19:49.370107 (Thread-69): Parsing macros/etc/query.sql
+2020-07-15 18:19:49.371238 (Thread-69): Parsing macros/etc/get_custom_schema.sql
+2020-07-15 18:19:49.373541 (Thread-69): Parsing macros/etc/get_custom_alias.sql
+2020-07-15 18:19:49.374586 (Thread-69): Parsing macros/etc/datetime.sql
+2020-07-15 18:19:49.383965 (Thread-69): Parsing macros/etc/get_custom_database.sql
+2020-07-15 18:19:49.386005 (Thread-69): Parsing macros/etc/is_incremental.sql
+2020-07-15 18:19:49.387989 (Thread-69): Parsing macros/adapters/common.sql
+2020-07-15 18:19:49.442617 (Thread-69): Parsing macros/schema_tests/relationships.sql
+2020-07-15 18:19:49.443880 (Thread-69): Parsing macros/schema_tests/unique.sql
+2020-07-15 18:19:49.445130 (Thread-69): Parsing macros/schema_tests/accepted_values.sql
+2020-07-15 18:19:49.447213 (Thread-69): Parsing macros/schema_tests/not_null.sql
+2020-07-15 18:19:49.448501 (Thread-69): Parsing macros/adapters.sql
+2020-07-15 18:19:49.472258 (Thread-69): Parsing macros/catalog.sql
+2020-07-15 18:19:49.474211 (Thread-69): Parsing macros/materializations/incremental.sql
+2020-07-15 18:19:49.483867 (Thread-69): Parsing macros/materializations/merge.sql
+2020-07-15 18:19:49.486064 (Thread-69): Parsing macros/materializations/table.sql
+2020-07-15 18:19:49.489823 (Thread-69): Parsing macros/materializations/view.sql
+2020-07-15 18:19:49.554707 (Thread-69): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:19:49.554834 (Thread-69): Opening a new connection, currently in state init
+2020-07-15 18:19:49.670648 (Thread-69): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:19:49.670785 (Thread-69): Opening a new connection, currently in state init
+2020-07-15 18:19:49.683130 (Thread-69): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:19:49.683261 (Thread-69): Opening a new connection, currently in state init
+2020-07-15 18:19:49.853939 (Thread-70): handling status request
+2020-07-15 18:19:49.869695 (Thread-70): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bcec518>]}
+2020-07-15 18:19:49.875617 (Thread-70): sending response (<Response 183 bytes [200 OK]>) to 10.0.44.18
+2020-07-15 18:19:51.112683 (Thread-71): handling status request
+2020-07-15 18:19:51.113272 (Thread-71): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0b84a8>]}
+2020-07-15 18:19:51.117500 (Thread-71): sending response (<Response 9853 bytes [200 OK]>) to 10.0.35.51
+2020-07-15 18:22:58.983503 (Thread-72): handling status request
+2020-07-15 18:22:58.985452 (Thread-72): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bb3a128>]}
+2020-07-15 18:22:58.989915 (Thread-72): sending response (<Response 9853 bytes [200 OK]>) to 10.0.3.122
+2020-07-15 18:22:59.001488 (Thread-73): handling status request
+2020-07-15 18:22:59.001841 (Thread-73): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bfe08d0>]}
+2020-07-15 18:22:59.006218 (Thread-73): sending response (<Response 9853 bytes [200 OK]>) to 10.0.26.54
+2020-07-15 18:22:59.234797 (Thread-74): handling cli_args request
+2020-07-15 18:22:59.235251 (Thread-74): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0d5f60>]}
+2020-07-15 18:22:59.245171 (Thread-74): Connection 'model.jaffle_shop.customers' was properly closed.
+2020-07-15 18:22:59.250968 (Thread-74): sending response (<Response 136 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:22:59.261245 (Thread-74): Partial parsing not enabled
+2020-07-15 18:22:59.305338 (Thread-74): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:22:59.305458 (Thread-74): Opening a new connection, currently in state init
+2020-07-15 18:22:59.321803 (Thread-74): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:22:59.321947 (Thread-74): Opening a new connection, currently in state init
+2020-07-15 18:22:59.337905 (Thread-74): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:22:59.338006 (Thread-74): Opening a new connection, currently in state init
+2020-07-15 18:22:59.456241 (Thread-75): handling poll request
+2020-07-15 18:22:59.456780 (Thread-75): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0dfc88>]}
+2020-07-15 18:22:59.459303 (Thread-75): sending response (<Response 3148 bytes [200 OK]>) to 10.0.21.66
+2020-07-15 18:22:59.670205 (Thread-74): Found 3 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:22:59.671438 (Thread-74): 
+2020-07-15 18:22:59.671785 (Thread-74): Acquiring new snowflake connection "master".
+2020-07-15 18:22:59.671883 (Thread-74): Opening a new connection, currently in state init
+2020-07-15 18:22:59.676722 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_analytics".
+2020-07-15 18:22:59.676838 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 18:22:59.690741 (ThreadPoolExecutor-0_0): Using snowflake connection "list_analytics".
+2020-07-15 18:22:59.690830 (ThreadPoolExecutor-0_0): On list_analytics: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "connection_name": "list_analytics"} */
+
+    show terse schemas in database analytics
+    limit 10000
+2020-07-15 18:23:00.579260 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 202 in 0.89 seconds
+2020-07-15 18:23:00.606329 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_analytics_dbt_kbinder".
+2020-07-15 18:23:00.606447 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_analytics).
+2020-07-15 18:23:00.613490 (ThreadPoolExecutor-1_0): Using snowflake connection "list_analytics_dbt_kbinder".
+2020-07-15 18:23:00.613600 (ThreadPoolExecutor-1_0): On list_analytics_dbt_kbinder: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "connection_name": "list_analytics_dbt_kbinder"} */
+
+    show terse objects in analytics.dbt_kbinder
+2020-07-15 18:23:00.666736 (Thread-76): handling poll request
+2020-07-15 18:23:00.667198 (Thread-76): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bb114e0>]}
+2020-07-15 18:23:00.669602 (Thread-76): sending response (<Response 4999 bytes [200 OK]>) to 10.0.3.122
+2020-07-15 18:23:00.737205 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 5 in 0.12 seconds
+2020-07-15 18:23:00.745755 (Thread-74): Acquiring new snowflake connection "master".
+2020-07-15 18:23:00.745883 (Thread-74): Opening a new connection, currently in state init
+2020-07-15 18:23:00.746051 (Thread-74): Using snowflake connection "master".
+2020-07-15 18:23:00.746114 (Thread-74): On master: BEGIN
+2020-07-15 18:23:01.417829 (Thread-74): SQL status: SUCCESS 1 in 0.67 seconds
+2020-07-15 18:23:01.418073 (Thread-74): On master: COMMIT
+2020-07-15 18:23:01.418226 (Thread-74): Using snowflake connection "master".
+2020-07-15 18:23:01.418298 (Thread-74): On master: COMMIT
+2020-07-15 18:23:01.622004 (Thread-74): SQL status: SUCCESS 1 in 0.20 seconds
+2020-07-15 18:23:01.622451 (Thread-74): 18:23:01 | Concurrency: 1 threads (target='default')
+2020-07-15 18:23:01.622559 (Thread-74): 18:23:01 | 
+2020-07-15 18:23:01.623848 (Thread-77): Began running node model.jaffle_shop.stg_customers
+2020-07-15 18:23:01.625222 (Thread-77): 18:23:01 | 1 of 3 START view model dbt_kbinder.stg_customers.................... [RUN]
+2020-07-15 18:23:01.625531 (Thread-77): Acquiring new snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:23:01.625599 (Thread-77): Opening a new connection, currently in state init
+2020-07-15 18:23:01.625678 (Thread-77): Compiling model.jaffle_shop.stg_customers
+2020-07-15 18:23:01.644475 (Thread-77): Writing injected SQL for node "model.jaffle_shop.stg_customers"
+2020-07-15 18:23:01.680135 (Thread-77): finished collecting timing info
+2020-07-15 18:23:01.706583 (Thread-77): Writing runtime SQL for node "model.jaffle_shop.stg_customers"
+2020-07-15 18:23:01.739146 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:23:01.739270 (Thread-77): On model.jaffle_shop.stg_customers: BEGIN
+2020-07-15 18:23:01.905538 (Thread-77): handling poll request
+2020-07-15 18:23:01.906032 (Thread-77): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0ab128>]}
+2020-07-15 18:23:01.909470 (Thread-77): sending response (<Response 8682 bytes [200 OK]>) to 10.0.36.199
+2020-07-15 18:23:02.366748 (Thread-77): SQL status: SUCCESS 1 in 0.63 seconds
+2020-07-15 18:23:02.366921 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:23:02.366986 (Thread-77): On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "model.jaffle_shop.stg_customers"} */
+
+  create or replace  view analytics.dbt_kbinder.stg_customers  as (
+    select
+    id as customer_id,
+    first_name,
+    last_name
+from raw.jaffle_shop.customers
+  );
+2020-07-15 18:23:02.654327 (Thread-77): SQL status: SUCCESS 1 in 0.29 seconds
+2020-07-15 18:23:02.655766 (Thread-77): On model.jaffle_shop.stg_customers: COMMIT
+2020-07-15 18:23:02.655912 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_customers".
+2020-07-15 18:23:02.655977 (Thread-77): On model.jaffle_shop.stg_customers: COMMIT
+2020-07-15 18:23:02.783981 (Thread-77): SQL status: SUCCESS 1 in 0.13 seconds
+2020-07-15 18:23:02.794448 (Thread-77): finished collecting timing info
+2020-07-15 18:23:02.795203 (Thread-77): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fd3c447-8196-41dd-bb22-55009c8d24cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0c5748>]}
+2020-07-15 18:23:02.796337 (Thread-77): 18:23:02 | 1 of 3 OK created view model dbt_kbinder.stg_customers............... [SUCCESS 1 in 1.17s]
+2020-07-15 18:23:02.796452 (Thread-77): Finished running node model.jaffle_shop.stg_customers
+2020-07-15 18:23:02.796586 (Thread-77): Began running node model.jaffle_shop.stg_orders
+2020-07-15 18:23:02.797588 (Thread-77): 18:23:02 | 2 of 3 START view model dbt_kbinder.stg_orders....................... [RUN]
+2020-07-15 18:23:02.797844 (Thread-77): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:23:02.797913 (Thread-77): Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers).
+2020-07-15 18:23:02.797975 (Thread-77): Compiling model.jaffle_shop.stg_orders
+2020-07-15 18:23:02.805782 (Thread-77): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 18:23:02.818699 (Thread-77): finished collecting timing info
+2020-07-15 18:23:02.823200 (Thread-77): Writing runtime SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 18:23:02.835790 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:23:02.835879 (Thread-77): On model.jaffle_shop.stg_orders: BEGIN
+2020-07-15 18:23:02.986178 (Thread-77): SQL status: SUCCESS 1 in 0.15 seconds
+2020-07-15 18:23:02.986336 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:23:02.986397 (Thread-77): On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "model.jaffle_shop.stg_orders"} */
+
+  create or replace  view analytics.dbt_kbinder.stg_orders  as (
+    select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+from raw.jaffle_shop.orders
+  );
+2020-07-15 18:23:03.123437 (Thread-78): handling poll request
+2020-07-15 18:23:03.123916 (Thread-78): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bcd3588>]}
+2020-07-15 18:23:03.127405 (Thread-78): sending response (<Response 10087 bytes [200 OK]>) to 10.0.21.66
+2020-07-15 18:23:03.309201 (Thread-77): SQL status: SUCCESS 1 in 0.32 seconds
+2020-07-15 18:23:03.310321 (Thread-77): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 18:23:03.310454 (Thread-77): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 18:23:03.310512 (Thread-77): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 18:23:03.424399 (Thread-77): SQL status: SUCCESS 1 in 0.11 seconds
+2020-07-15 18:23:03.428737 (Thread-77): finished collecting timing info
+2020-07-15 18:23:03.429474 (Thread-77): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fd3c447-8196-41dd-bb22-55009c8d24cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bb5bc50>]}
+2020-07-15 18:23:03.430573 (Thread-77): 18:23:03 | 2 of 3 OK created view model dbt_kbinder.stg_orders.................. [SUCCESS 1 in 0.63s]
+2020-07-15 18:23:03.430678 (Thread-77): Finished running node model.jaffle_shop.stg_orders
+2020-07-15 18:23:03.431411 (Thread-77): Began running node model.jaffle_shop.customers
+2020-07-15 18:23:03.432392 (Thread-77): 18:23:03 | 3 of 3 START view model dbt_kbinder.customers........................ [RUN]
+2020-07-15 18:23:03.432641 (Thread-77): Acquiring new snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:23:03.432707 (Thread-77): Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders).
+2020-07-15 18:23:03.432769 (Thread-77): Compiling model.jaffle_shop.customers
+2020-07-15 18:23:03.441821 (Thread-77): Writing injected SQL for node "model.jaffle_shop.customers"
+2020-07-15 18:23:03.454791 (Thread-77): finished collecting timing info
+2020-07-15 18:23:03.459106 (Thread-77): Writing runtime SQL for node "model.jaffle_shop.customers"
+2020-07-15 18:23:03.471557 (Thread-77): Using snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:23:03.471645 (Thread-77): On model.jaffle_shop.customers: BEGIN
+2020-07-15 18:23:03.603059 (Thread-77): SQL status: SUCCESS 1 in 0.13 seconds
+2020-07-15 18:23:03.603214 (Thread-77): Using snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:23:03.603274 (Thread-77): On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "model.jaffle_shop.customers"} */
+
+  create or replace  view analytics.dbt_kbinder.customers  as (
+    with customers as (
+    select * from analytics.dbt_kbinder.stg_customers
+),
+orders as (
+    select * from analytics.dbt_kbinder.stg_orders
+),
+customer_orders as (
+    select
+        customer_id,
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+    from orders
+    group by 1
+),
+final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+    from customers
+    left join customer_orders using (customer_id)
+)
+select * from final
+  );
+2020-07-15 18:23:04.012591 (Thread-77): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 18:23:04.013767 (Thread-77): On model.jaffle_shop.customers: COMMIT
+2020-07-15 18:23:04.013905 (Thread-77): Using snowflake connection "model.jaffle_shop.customers".
+2020-07-15 18:23:04.013963 (Thread-77): On model.jaffle_shop.customers: COMMIT
+2020-07-15 18:23:04.128121 (Thread-77): SQL status: SUCCESS 1 in 0.11 seconds
+2020-07-15 18:23:04.131849 (Thread-77): finished collecting timing info
+2020-07-15 18:23:04.132580 (Thread-77): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fd3c447-8196-41dd-bb22-55009c8d24cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b0c50b8>]}
+2020-07-15 18:23:04.133701 (Thread-77): 18:23:04 | 3 of 3 OK created view model dbt_kbinder.customers................... [SUCCESS 1 in 0.70s]
+2020-07-15 18:23:04.133804 (Thread-77): Finished running node model.jaffle_shop.customers
+2020-07-15 18:23:04.234670 (Thread-74): Using snowflake connection "master".
+2020-07-15 18:23:04.234790 (Thread-74): On master: BEGIN
+2020-07-15 18:23:04.376853 (Thread-79): handling poll request
+2020-07-15 18:23:04.377359 (Thread-79): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bb3bfd0>]}
+2020-07-15 18:23:04.381993 (Thread-79): sending response (<Response 13483 bytes [200 OK]>) to 10.0.14.209
+2020-07-15 18:23:04.388539 (Thread-74): SQL status: SUCCESS 1 in 0.15 seconds
+2020-07-15 18:23:04.388664 (Thread-74): On master: COMMIT
+2020-07-15 18:23:04.388763 (Thread-74): Using snowflake connection "master".
+2020-07-15 18:23:04.388824 (Thread-74): On master: COMMIT
+2020-07-15 18:23:04.560632 (Thread-74): SQL status: SUCCESS 1 in 0.17 seconds
+2020-07-15 18:23:04.560959 (Thread-74): 18:23:04 | 
+2020-07-15 18:23:04.561058 (Thread-74): 18:23:04 | Finished running 3 view models in 4.89s.
+2020-07-15 18:23:04.561179 (Thread-74): Connection 'master' was left open.
+2020-07-15 18:23:04.561265 (Thread-74): On master: Close
+2020-07-15 18:23:04.767867 (Thread-74): Connection 'list_analytics_dbt_kbinder' was left open.
+2020-07-15 18:23:04.767993 (Thread-74): On list_analytics_dbt_kbinder: Close
+2020-07-15 18:23:04.981205 (Thread-74): Connection 'model.jaffle_shop.customers' was left open.
+2020-07-15 18:23:04.981323 (Thread-74): On model.jaffle_shop.customers: Close
+2020-07-15 18:23:05.218289 (Thread-74): 
+2020-07-15 18:23:05.218469 (Thread-74): Completed successfully
+2020-07-15 18:23:05.218549 (Thread-74): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-07-15 18:23:05.625995 (Thread-80): handling poll request
+2020-07-15 18:23:05.626513 (Thread-80): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb80041a20>]}
+2020-07-15 18:23:05.638950 (Thread-80): sending response (<Response 14849 bytes [200 OK]>) to 10.0.14.222
+2020-07-15 18:23:05.872456 (Thread-81): handling status request
+2020-07-15 18:23:05.872865 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bcd1ef0>]}
+2020-07-15 18:23:05.877092 (Thread-81): sending response (<Response 9853 bytes [200 OK]>) to 10.0.42.207
+2020-07-15 18:24:16.215241 (Thread-82): Got an acceptable cached parse result
+2020-07-15 18:24:16.262572 (Thread-82): Acquiring new snowflake connection "model.jaffle_shop.orders".
+2020-07-15 18:24:16.262704 (Thread-82): Opening a new connection, currently in state init
+2020-07-15 18:24:16.689523 (Thread-83): handling status request
+2020-07-15 18:24:16.690018 (Thread-83): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7baf2898>]}
+2020-07-15 18:24:16.691071 (Thread-83): sending response (<Response 1020 bytes [200 OK]>) to 10.0.35.51
+2020-07-15 18:29:46.300648 (Thread-84): handling status request
+2020-07-15 18:29:46.302522 (Thread-84): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7baf26a0>]}
+2020-07-15 18:29:46.303608 (Thread-84): sending response (<Response 1020 bytes [200 OK]>) to 10.0.26.54
+2020-07-15 18:29:46.553853 (Thread-85): handling run_sql request
+2020-07-15 18:29:46.554358 (Thread-85): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc4acf8>]}
+2020-07-15 18:29:46.555588 (Thread-85): Connection 'model.jaffle_shop.orders' was properly closed.
+2020-07-15 18:29:46.561073 (Thread-85): sending response (<Response 136 bytes [200 OK]>) to 10.0.36.199
+2020-07-15 18:29:46.578870 (Thread-85): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:29:46.579362 (Thread-85): Opening a new connection, currently in state init
+2020-07-15 18:29:46.594835 (Thread-85): Found 4 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:29:46.595954 (Thread-86): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:29:46.596071 (Thread-86): Opening a new connection, currently in state init
+2020-07-15 18:29:46.596175 (Thread-86): Compiling rpc.jaffle_shop.request
+2020-07-15 18:29:46.611492 (Thread-86): finished collecting timing info
+2020-07-15 18:29:46.612360 (Thread-86): Using snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:29:46.612443 (Thread-86): On rpc.jaffle_shop.request: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "rpc.jaffle_shop.request"} */
+select * from
+(select orderid as order_id, amount, id from raw.stripe.payment) as p
+
+inner join analytics.dbt_kbinder.stg_orders
+
+on p.order_id = stg_orders.order_id
+-- where status = 'success'
+limit 100
+2020-07-15 18:29:46.773790 (Thread-86): handling poll request
+2020-07-15 18:29:46.774299 (Thread-86): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc8d2b0>]}
+2020-07-15 18:29:46.776758 (Thread-86): sending response (<Response 3829 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:29:47.713131 (Thread-86): SQL status: SUCCESS 100 in 1.10 seconds
+2020-07-15 18:29:47.717885 (Thread-86): finished collecting timing info
+2020-07-15 18:29:48.015310 (Thread-87): handling poll request
+2020-07-15 18:29:48.015796 (Thread-87): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb93d08470>]}
+2020-07-15 18:29:48.021259 (Thread-87): sending response (<Response 9565 bytes [200 OK]>) to 10.0.14.222
+2020-07-15 18:30:03.722355 (Thread-88): handling status request
+2020-07-15 18:30:03.724112 (Thread-88): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb809fb550>]}
+2020-07-15 18:30:03.725270 (Thread-88): sending response (<Response 1020 bytes [200 OK]>) to 10.0.42.207
+2020-07-15 18:30:08.012134 (Thread-89): Got an acceptable cached parse result
+2020-07-15 18:30:08.274083 (Thread-90): handling status request
+2020-07-15 18:30:08.274542 (Thread-90): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb809c4128>]}
+2020-07-15 18:30:08.275357 (Thread-90): sending response (<Response 445 bytes [200 OK]>) to 10.0.14.222
+2020-07-15 18:30:32.747956 (Thread-91): handling status request
+2020-07-15 18:30:32.750104 (Thread-91): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb809c4e48>]}
+2020-07-15 18:30:32.750951 (Thread-91): sending response (<Response 445 bytes [200 OK]>) to 10.0.14.209
+2020-07-15 18:30:32.953624 (Thread-92): handling run_sql request
+2020-07-15 18:30:32.954003 (Thread-92): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb809c4ba8>]}
+2020-07-15 18:30:32.960828 (Thread-92): sending response (<Response 136 bytes [200 OK]>) to 10.0.9.2
+2020-07-15 18:30:32.981174 (Thread-92): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:32.981677 (Thread-92): Opening a new connection, currently in state init
+2020-07-15 18:30:32.991893 (Thread-92): Found 4 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:30:32.993095 (Thread-93): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:32.993260 (Thread-93): Opening a new connection, currently in state init
+2020-07-15 18:30:32.993364 (Thread-93): Compiling rpc.jaffle_shop.request
+2020-07-15 18:30:33.008455 (Thread-93): finished collecting timing info
+2020-07-15 18:30:33.009221 (Thread-93): Using snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:33.009310 (Thread-93): On rpc.jaffle_shop.request: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "rpc.jaffle_shop.request"} */
+select * from
+(select orderid as order_id, amount, id from raw.stripe.payment) as p
+
+inner join analytics.dbt_kbinder.stg_orders
+
+on p.order_id = stg_orders.order_id
+where status = 'success'
+limit 100
+2020-07-15 18:30:33.154417 (Thread-93): handling poll request
+2020-07-15 18:30:33.154955 (Thread-93): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb809ede48>]}
+2020-07-15 18:30:33.157610 (Thread-93): sending response (<Response 3826 bytes [200 OK]>) to 10.0.9.2
+2020-07-15 18:30:34.105799 (Thread-93): SQL status: SUCCESS 0 in 1.10 seconds
+2020-07-15 18:30:34.106417 (Thread-93): finished collecting timing info
+2020-07-15 18:30:34.382075 (Thread-94): handling poll request
+2020-07-15 18:30:34.382754 (Thread-94): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b9f3780>]}
+2020-07-15 18:30:34.388875 (Thread-94): sending response (<Response 3537 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:30:40.448245 (Thread-95): handling status request
+2020-07-15 18:30:40.450213 (Thread-95): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7b982550>]}
+2020-07-15 18:30:40.451076 (Thread-95): sending response (<Response 445 bytes [200 OK]>) to 10.0.46.191
+2020-07-15 18:30:40.659415 (Thread-96): handling run_sql request
+2020-07-15 18:30:40.659762 (Thread-96): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8003eeb8>]}
+2020-07-15 18:30:40.666258 (Thread-96): sending response (<Response 136 bytes [200 OK]>) to 10.0.21.66
+2020-07-15 18:30:40.686237 (Thread-96): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:40.686737 (Thread-96): Opening a new connection, currently in state init
+2020-07-15 18:30:40.697035 (Thread-96): Found 4 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:30:40.698207 (Thread-97): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:40.698327 (Thread-97): Opening a new connection, currently in state init
+2020-07-15 18:30:40.698425 (Thread-97): Compiling rpc.jaffle_shop.request
+2020-07-15 18:30:40.714073 (Thread-97): finished collecting timing info
+2020-07-15 18:30:40.714793 (Thread-97): Using snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:30:40.714875 (Thread-97): On rpc.jaffle_shop.request: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "rpc.jaffle_shop.request"} */
+select * from
+(select orderid as order_id, amount, id from raw.stripe.payment) as p
+
+inner join analytics.dbt_kbinder.stg_orders
+
+on p.order_id = stg_orders.order_id
+--where status = 'success'
+limit 100
+2020-07-15 18:30:40.866542 (Thread-97): handling poll request
+2020-07-15 18:30:40.867084 (Thread-97): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8377e780>]}
+2020-07-15 18:30:40.870226 (Thread-97): sending response (<Response 3834 bytes [200 OK]>) to 10.0.9.2
+2020-07-15 18:30:41.702322 (Thread-97): SQL status: SUCCESS 100 in 0.99 seconds
+2020-07-15 18:30:41.707199 (Thread-97): finished collecting timing info
+2020-07-15 18:30:42.092013 (Thread-98): handling poll request
+2020-07-15 18:30:42.092520 (Thread-98): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb80149d68>]}
+2020-07-15 18:30:42.097798 (Thread-98): sending response (<Response 9560 bytes [200 OK]>) to 10.0.36.199
+2020-07-15 18:31:11.185960 (Thread-99): Got an acceptable cached parse result
+2020-07-15 18:31:11.234163 (Thread-99): Acquiring new snowflake connection "model.jaffle_shop.all_orders".
+2020-07-15 18:31:11.234305 (Thread-99): Opening a new connection, currently in state init
+2020-07-15 18:31:11.637813 (Thread-100): handling status request
+2020-07-15 18:31:11.638273 (Thread-100): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bce6b38>]}
+2020-07-15 18:31:11.639298 (Thread-100): sending response (<Response 1024 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:31:21.036760 (Thread-101): handling status request
+2020-07-15 18:31:21.038747 (Thread-101): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bce6eb8>]}
+2020-07-15 18:31:21.160809 (Thread-101): sending response (<Response 1024 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:31:21.343406 (Thread-102): handling run_sql request
+2020-07-15 18:31:21.343832 (Thread-102): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bac60f0>]}
+2020-07-15 18:31:21.344979 (Thread-102): Connection 'model.jaffle_shop.all_orders' was properly closed.
+2020-07-15 18:31:21.350508 (Thread-102): sending response (<Response 136 bytes [200 OK]>) to 10.0.26.54
+2020-07-15 18:31:21.369002 (Thread-102): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:31:21.369534 (Thread-102): Opening a new connection, currently in state init
+2020-07-15 18:31:21.378399 (Thread-102): Found 5 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:31:21.379565 (Thread-103): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:31:21.379685 (Thread-103): Opening a new connection, currently in state init
+2020-07-15 18:31:21.379784 (Thread-103): Compiling rpc.jaffle_shop.request
+2020-07-15 18:31:21.393285 (Thread-103): finished collecting timing info
+2020-07-15 18:31:21.393936 (Thread-103): Using snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:31:21.394019 (Thread-103): On rpc.jaffle_shop.request: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "rpc.jaffle_shop.request"} */
+select * from raw.stripe.payment
+limit 100
+2020-07-15 18:31:21.558200 (Thread-103): handling poll request
+2020-07-15 18:31:21.558746 (Thread-103): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bce6eb8>]}
+2020-07-15 18:31:21.561341 (Thread-103): sending response (<Response 3681 bytes [200 OK]>) to 10.0.44.18
+2020-07-15 18:31:22.432942 (Thread-103): SQL status: SUCCESS 100 in 1.04 seconds
+2020-07-15 18:31:22.438686 (Thread-103): finished collecting timing info
+2020-07-15 18:31:22.788189 (Thread-104): handling poll request
+2020-07-15 18:31:22.788725 (Thread-104): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bad7128>]}
+2020-07-15 18:31:22.794328 (Thread-104): sending response (<Response 12386 bytes [200 OK]>) to 10.0.46.191
+2020-07-15 18:32:52.595541 (Thread-105): Got an acceptable cached parse result
+2020-07-15 18:32:52.646460 (Thread-105): Acquiring new snowflake connection "model.jaffle_shop.orders".
+2020-07-15 18:32:52.646616 (Thread-105): Opening a new connection, currently in state init
+2020-07-15 18:32:53.016574 (Thread-106): handling status request
+2020-07-15 18:32:53.017029 (Thread-106): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7aa225c0>]}
+2020-07-15 18:32:53.018100 (Thread-106): sending response (<Response 1023 bytes [200 OK]>) to 10.0.9.2
+2020-07-15 18:32:54.622136 (Thread-107): Got an acceptable cached parse result
+2020-07-15 18:32:54.664070 (Thread-107): Acquiring new snowflake connection "model.jaffle_shop.all_orders".
+2020-07-15 18:32:54.664220 (Thread-107): Opening a new connection, currently in state init
+2020-07-15 18:32:54.869626 (Thread-108): handling status request
+2020-07-15 18:32:54.870068 (Thread-108): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7a9ede80>]}
+2020-07-15 18:32:54.871081 (Thread-108): sending response (<Response 1027 bytes [200 OK]>) to 10.0.16.100
+2020-07-15 18:33:19.161802 (Thread-109): Got an acceptable cached parse result
+2020-07-15 18:33:19.356424 (Thread-110): handling status request
+2020-07-15 18:33:19.364817 (Thread-110): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bd1d470>]}
+2020-07-15 18:33:19.365686 (Thread-110): sending response (<Response 446 bytes [200 OK]>) to 10.0.46.191
+2020-07-15 18:34:02.658221 (Thread-111): handling status request
+2020-07-15 18:34:02.660159 (Thread-111): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7abd4748>]}
+2020-07-15 18:34:02.661096 (Thread-111): sending response (<Response 446 bytes [200 OK]>) to 10.0.14.209
+2020-07-15 18:34:02.873551 (Thread-112): handling run_sql request
+2020-07-15 18:34:02.874055 (Thread-112): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7abd4940>]}
+2020-07-15 18:34:02.875209 (Thread-112): Connection 'model.jaffle_shop.all_orders' was properly closed.
+2020-07-15 18:34:02.880991 (Thread-112): sending response (<Response 136 bytes [200 OK]>) to 10.0.35.51
+2020-07-15 18:34:02.900490 (Thread-112): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:34:02.901048 (Thread-112): Opening a new connection, currently in state init
+2020-07-15 18:34:02.912086 (Thread-112): Found 5 models, 9 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 18:34:02.913394 (Thread-113): Acquiring new snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:34:02.913527 (Thread-113): Opening a new connection, currently in state init
+2020-07-15 18:34:02.913652 (Thread-113): Compiling rpc.jaffle_shop.request
+2020-07-15 18:34:02.931530 (Thread-113): finished collecting timing info
+2020-07-15 18:34:02.932298 (Thread-113): Using snowflake connection "rpc.jaffle_shop.request".
+2020-07-15 18:34:02.932386 (Thread-113): On rpc.jaffle_shop.request: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "user", "target_name": "default", "node_id": "rpc.jaffle_shop.request"} */
+select * from
+(select orderid as order_id, amount, id, status from raw.stripe.payment) as p
+
+inner join analytics.dbt_kbinder.stg_orders
+
+on p.order_id = stg_orders.order_id
+--where status = 'success'
+limit 100
+2020-07-15 18:34:03.088512 (Thread-113): handling poll request
+2020-07-15 18:34:03.089252 (Thread-113): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7ab258d0>]}
+2020-07-15 18:34:03.091911 (Thread-113): sending response (<Response 3851 bytes [200 OK]>) to 10.0.1.7
+2020-07-15 18:34:04.085754 (Thread-113): SQL status: SUCCESS 100 in 1.15 seconds
+2020-07-15 18:34:04.091134 (Thread-113): finished collecting timing info
+2020-07-15 18:34:04.343253 (Thread-114): handling poll request
+2020-07-15 18:34:04.343803 (Thread-114): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc4a748>]}
+2020-07-15 18:34:04.349318 (Thread-114): sending response (<Response 10216 bytes [200 OK]>) to 10.0.44.18
+2020-07-15 18:34:18.316138 (Thread-115): handling kill request
+2020-07-15 18:34:18.317993 (Thread-115): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc4ab70>]}
+2020-07-15 18:34:18.319981 (Thread-115): sending response (<Response 112 bytes [200 OK]>) to 10.0.36.199
+2020-07-15 18:34:31.491612 (Thread-116): handling status request
+2020-07-15 18:34:31.493407 (Thread-116): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8007f2e8>]}
+2020-07-15 18:34:31.494274 (Thread-116): sending response (<Response 446 bytes [200 OK]>) to 10.0.16.100
+2020-07-15 18:34:31.572044 (Thread-117): handling ps request
+2020-07-15 18:34:31.572399 (Thread-117): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb80071780>]}
+2020-07-15 18:34:31.575861 (Thread-117): sending response (<Response 2961 bytes [200 OK]>) to 10.0.21.82
+2020-07-15 18:34:31.819341 (Thread-118): handling poll request
+2020-07-15 18:34:31.819748 (Thread-118): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc4a780>]}
+2020-07-15 18:34:31.841601 (Thread-118): sending response (<Response 53833 bytes [200 OK]>) to 10.0.14.209
+2020-07-15 18:34:32.054034 (Thread-119): handling status request
+2020-07-15 18:34:32.054565 (Thread-119): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bbb5978>]}
+2020-07-15 18:34:32.055407 (Thread-119): sending response (<Response 446 bytes [200 OK]>) to 10.0.21.82
+2020-07-15 18:34:48.890371 (Thread-120): handling status request
+2020-07-15 18:34:48.892320 (Thread-120): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8377f0b8>]}
+2020-07-15 18:34:48.893370 (Thread-120): sending response (<Response 446 bytes [200 OK]>) to 10.0.42.207
+2020-07-15 18:34:53.085194 (Thread-121): Got an acceptable cached parse result
+2020-07-15 18:34:53.262096 (Thread-122): handling status request
+2020-07-15 18:34:53.277824 (Thread-122): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bbfe780>]}
+2020-07-15 18:34:53.283818 (Thread-122): sending response (<Response 183 bytes [200 OK]>) to 10.0.3.122
+2020-07-15 18:34:54.589536 (Thread-123): handling status request
+2020-07-15 18:34:54.590018 (Thread-123): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bbc1da0>]}
+2020-07-15 18:34:54.590832 (Thread-123): sending response (<Response 446 bytes [200 OK]>) to 10.0.14.222
+2020-07-15 18:35:08.886233 (Thread-124): handling status request
+2020-07-15 18:35:08.887988 (Thread-124): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e2b97605-9e01-4e3b-b4ea-09687355c1ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bfcdc18>]}
+2020-07-15 18:35:08.888821 (Thread-124): sending response (<Response 446 bytes [200 OK]>) to 10.0.14.222
+2020-07-15 18:35:10.329426 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bc1fb38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bd541d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb7bcb9a58>]}
+2020-07-15 18:35:10.329692 (MainThread): Flushing usage events
+2020-07-15 18:35:10.471204 (MainThread): Runtime Error
+  no dbt_project.yml found at expected path /usr/src/develop/user-7134/environment-8717/repository-7282/dbt_project.yml
+Traceback (most recent call last):
+  File "/usr/src/app/sinter/clients/dbt.py", line 754, in call
+    command + extra_args
+  File "/usr/local/lib/python3.6/dist-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 147, in run
+    self.run_forever()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 142, in run_forever
+    threaded=not self.task_manager.single_threaded(),
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 1012, in run_simple
+    inner()
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 969, in inner
+    srv.serve_forever()
+  File "/usr/local/lib/python3.6/dist-packages/werkzeug/serving.py", line 737, in serve_forever
+    HTTPServer.serve_forever(self)
+  File "/usr/lib/python3.6/socketserver.py", line 236, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/lib/python3.6/selectors.py", line 376, in select
+    fd_event_list = self._poll.poll(timeout)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/task/rpc/server.py", line 102, in _sighup_handler
+    self.task_manager.reload_config()
+  File "/usr/local/lib/python3.6/dist-packages/dbt/rpc/task_manager.py", line 128, in reload_config
+    config = self.config.from_args(self.args)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/runtime.py", line 210, in from_args
+    project, profile = cls.collect_parts(args)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/runtime.py", line 181, in collect_parts
+    partial = Project.partial_load(project_root)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 589, in partial_load
+    project_dict = _raw_project_from(project_root)
+  File "/usr/local/lib/python3.6/dist-packages/dbt/config/project.py", line 165, in _raw_project_from
+    .format(project_yaml_filepath)
+dbt.exceptions.DbtProjectError: Runtime Error
+  no dbt_project.yml found at expected path /usr/src/develop/user-7134/environment-8717/repository-7282/dbt_project.yml
+2020-07-15 18:35:10.472058 (MainThread): Runtime Error
+  no dbt_project.yml found at expected path /usr/src/develop/user-7134/environment-8717/repository-7282/dbt_project.yml
